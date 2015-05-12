@@ -5,6 +5,5 @@
 	ui = auto
 [github]
 	user = bahamut45
-	token = 12a4f85023fcf1ebea6112df90a4a69371c3fdf7
 [push]
 	default = simple

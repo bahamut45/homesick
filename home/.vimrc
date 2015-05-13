@@ -82,5 +82,8 @@ iab <? <?php
 	" $ cd vim-airline
 	" $ cp -rnv * ~/.vim/
 set laststatus=2
-set t_Co=256
+let xtermenv=$TERM
+if xtermenv != xterm-256color
+	set t_Co=256
+endif
 let g:airline_powerline_fonts = 1

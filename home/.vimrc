@@ -1,9 +1,23 @@
+" Ajout de Vundle 
+
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'bling/vim-airline'
+
+call vundle#end()
+filetype plugin indent on
+
 " Active la numérotation des lignes
 set number
 
 " Coloration syntaxique
 colorscheme zellner 
-filetype plugin indent on
 syntax on
 
 " Active la souris
@@ -53,7 +67,7 @@ set shiftround
 set ignorecase
 
 " Active la détection du type de fichier
-filetype on
+" filetype on
 
 " Correction orthographique
 " set spelllang =fr
@@ -67,5 +81,6 @@ iab <? <?php
 	" $ git clone https://github.com/bling/vim-airline.git
 	" $ cd vim-airline
 	" $ cp -rnv * ~/.vim/
-" set laststatus=2
-
+set laststatus=2
+set t_Co=256
+let g:airline_powerline_fonts = 1

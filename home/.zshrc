@@ -48,6 +48,8 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 plugins=(git mercurial archlinux ssh-agent sudo sublime zsh-syntax-highlighting)
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root line)
+
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=red,bold
 ZSH_HIGHLIGHT_STYLES[path]=fg=white,bold
 ZSH_HIGHLIGHT_STYLES[path_prefix]=fg=cyan

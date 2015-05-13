@@ -26,7 +26,7 @@ ZSH_THEME="xiong-chiamiov-plus"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -46,6 +46,12 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git mercurial archlinux ssh-agent sudo sublime zsh-syntax-highlighting)
+
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root line)
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=red,bold
+ZSH_HIGHLIGHT_STYLES[path]=fg=white,bold
+ZSH_HIGHLIGHT_STYLES[path_prefix]=fg=cyan
+ZSH_HIGHLIGHT_STYLES[path_approx]=fg=yellow
 
 # User configuration
 

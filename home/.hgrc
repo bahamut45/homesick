@@ -1,0 +1,8 @@
+[ui]
+username = Nicolas JOUBERT <nicolas.joubert@recia.fr>
+
+[extensions]
+prompt = ~/.hg-prompt/prompt.py
+
+[alias]
+glog = log -G

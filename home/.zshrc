@@ -75,6 +75,7 @@ function hg_prompt_info {
 # export LANG=en_US.UTF-8
 
 export EDITOR='vim'
+source $HOME/.profile
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

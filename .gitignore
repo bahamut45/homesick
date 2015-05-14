@@ -1,2 +1,5 @@
 # Ignorer les fichiers du castle gsi commun
 home/.oh-my-zsh-custom/plugins/gsi-gethosts
+
+# Ignorer les .pyc de hg-prompt
+home/.hg-prompt/prompt.pyc

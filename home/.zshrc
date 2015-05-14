@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="xiong-chiamiov-plus"
+ZSH_THEME="my-xyiong"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -61,15 +61,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin/recia-utilities:/usr/
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-
-function hg_prompt_info {
-    hg prompt --angle-brackets "\
-<%{$fg_bold[blue]%}hg:(%{$fg_bold[red]%}<branch>><:<tags|, >%{$fg_bold[blue]%})>\
-%{$fg[yellow]%}<status|modified|unknown><update>\
-<patches: <patches|join( → )>>%{$reset_color%}" 2>/dev/null
-}
-
-#PROMPT='${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)$(hg_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

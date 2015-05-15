@@ -57,7 +57,17 @@ ZSH_HIGHLIGHT_STYLES[path_approx]=fg=yellow
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/bin/recia-utilities:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/njoubert/.gem/ruby/2.2.0/bin"
+PATH="/usr/local/sbin"
+PATH="$PATH:/usr/local/bin"
+PATH="$PATH:/usr/local/bin/recia-utilities"
+PATH="$PATH:/usr/bin"
+PATH="$PATH:/usr/bin/site_perl"
+PATH="$PATH:/usr/bin/vendor_perl"
+PATH="$PATH:/usr/bin/core_perl"
+PATH="$PATH:/home/njoubert/.gem/ruby/2.2.0/bin"
+PATH="$PATH:/home/njoubert/Google Drive/bin"
+
+export PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh

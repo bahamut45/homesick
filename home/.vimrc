@@ -6,6 +6,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Bundle 'altercation/vim-colors-solarized'
+
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'bling/vim-airline'
@@ -17,7 +19,7 @@ filetype plugin indent on
 set number
 
 " Coloration syntaxique
-colorscheme zellner 
+colorscheme solarized
 syntax on
 
 " Active la souris
@@ -28,9 +30,6 @@ set showcmd
 
 " Active l'autoindentation
 " set autoindent
-
-" Désactive la compatbilité avec l'ancien VI
-" set nocompatible
 
 " Défini l'historique à 100
 set history=100
@@ -58,7 +57,7 @@ if has("autocmd")
 
 " Permet de surligner la ligne actuelle
 set cursorline
-hi Cursorline ctermbg=darkgrey guibg=#771c1c cterm=none 
+" hi Cursorline ctermbg=darkgrey guibg=#771c1c cterm=none 
 
 " Indentation à la marque de Tab la plus proche
 set shiftround

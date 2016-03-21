@@ -64,9 +64,14 @@ PATH="$PATH:/usr/bin"
 PATH="$PATH:/usr/bin/site_perl"
 PATH="$PATH:/usr/bin/vendor_perl"
 PATH="$PATH:/usr/bin/core_perl"
-PATH="$PATH:/home/njoubert/.gem/ruby/2.2.0/bin"
+if which ruby >/dev/null && which gem >/dev/null; then
+	PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
 PATH="$PATH:/home/njoubert/Google Drive/bin"
-
+if [[ -d $HOME/.phpenv ]]; then
+	PATH="$PATH:/home/njoubert/.phpenv/bin"
+	PATH="$PATH:/home/njoubert/.phpenv/shims"
+fi
 export PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -101,4 +106,4 @@ source $HOME/.profile
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval `dircolors $HOME/.dircolors-solarized/dircolors.256dark`
-
+eval "$(phpenv init -)"

@@ -63,16 +63,16 @@ PATH="$PATH:/usr/bin"
 PATH="$PATH:/usr/bin/site_perl"
 PATH="$PATH:/usr/bin/vendor_perl"
 PATH="$PATH:/usr/bin/core_perl"
-if [[ -d "/usr/local/bin/recia-utilities" ]]
+if [[ -d "/usr/local/bin/recia-utilities" ]]; then
 	PATH="$PATH:/usr/local/bin/recia-utilities"
 fi
 if which ruby >/dev/null && which gem >/dev/null; then
 	PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
-if [[ -d  "$HOME/Google Drive/bin" ]]
+if [[ -d  "$HOME/Google Drive/bin" ]]; then
 	PATH="$PATH:/home/njoubert/Google Drive/bin"
 fi
-if [[ -d  "$HOME/Google-Drive/bin" ]]
+if [[ -d  "$HOME/Google-Drive/bin" ]]; then
 	PATH="$PATH:/home/njoubert/Google-Drive/bin"
 fi
 if [[ -d $HOME/.phpenv ]]; then

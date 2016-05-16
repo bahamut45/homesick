@@ -13,3 +13,6 @@
 [submodule "home/.dircolors-solarized"]
 	path = home/.dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized
+[submodule "home/.vim/bundle/vim-colors-solarized"]
+	path = home/.vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized

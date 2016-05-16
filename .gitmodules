@@ -10,3 +10,6 @@
 [submodule "home/.vim/bundle/vim-airline"]
 	path = home/.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+[submodule "home/.dircolors-solarized"]
+	path = home/.dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized

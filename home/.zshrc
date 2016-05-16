@@ -59,15 +59,22 @@ ZSH_HIGHLIGHT_STYLES[path_approx]=fg=yellow
 
 PATH="/usr/local/sbin"
 PATH="$PATH:/usr/local/bin"
-PATH="$PATH:/usr/local/bin/recia-utilities"
 PATH="$PATH:/usr/bin"
 PATH="$PATH:/usr/bin/site_perl"
 PATH="$PATH:/usr/bin/vendor_perl"
 PATH="$PATH:/usr/bin/core_perl"
+if [[ -d "/usr/local/bin/recia-utilities" ]]
+	PATH="$PATH:/usr/local/bin/recia-utilities"
+fi
 if which ruby >/dev/null && which gem >/dev/null; then
 	PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
-PATH="$PATH:/home/njoubert/Google Drive/bin"
+if [[ -d  "$HOME/Google Drive/bin" ]]
+	PATH="$PATH:/home/njoubert/Google Drive/bin"
+fi
+if [[ -d  "$HOME/Google-Drive/bin" ]]
+	PATH="$PATH:/home/njoubert/Google-Drive/bin"
+fi
 if [[ -d $HOME/.phpenv ]]; then
 	PATH="$PATH:/home/njoubert/.phpenv/bin"
 	PATH="$PATH:/home/njoubert/.phpenv/shims"
@@ -106,4 +113,6 @@ source $HOME/.profile
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval `dircolors $HOME/.dircolors-solarized/dircolors.256dark`
-eval "$(phpenv init -)"
+if [[ -d $HOME/.phpenv ]]; then
+	eval "$(phpenv init -)"
+fi

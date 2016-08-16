@@ -112,6 +112,9 @@ source $HOME/.profile
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ls='ls --color=tty --group-directories-first'
+
+
 eval `dircolors $HOME/.dircolors-solarized/dircolors.256dark`
 if [[ -d $HOME/.phpenv ]]; then
 	eval "$(phpenv init -)"
